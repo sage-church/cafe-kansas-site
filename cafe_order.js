@@ -1,4 +1,5 @@
 //handle toggle of menu categories on Place Order page
+
 $(".showOrHideButton").click(function () {
     if (
         $(this).parent().next().css("display") == "none" ||
@@ -14,44 +15,70 @@ $(".showOrHideButton").click(function () {
     $(this).parent().next().slideToggle("fast")
 });
 
-//update item quantity and total dollar amount with minus button
 
-$(".minus").click(function () {
-    //variables used to update quantity
-    var currentQuant = $(this).next().html()
-    var parsedQuant = parseInt(currentQuant)
-    var newQuant = parsedQuant - 1
+//validate quantity inputs
 
-    //variables used to update total dollar amount
-    var matchExpression = /\d+\.*\d+/g
-    var itemPrice = $(this).parent().prev().html().match(matchExpression)
-    var currentTotalNumber = $("#total-dollar-amount").html().match(matchExpression)
-    var newTotalNumber = (Number(currentTotalNumber) - Number(itemPrice)).toFixed(2)
-    var newTotalHtml = "$" + newTotalNumber
-    
-    //update quantity and total dollar amount
-    if (currentQuant > 0) {
-        $(this).next().html(newQuant)
-        $("#total-dollar-amount").html(newTotalHtml)
+$(".quantity-input").change(function () {
+
+    var quantity = parseInt($(this).val()),
+        minimum = parseInt($(this).attr("min")),
+        maximum = parseInt($(this).attr("max"));
+
+    if (isNaN(quantity)) {
+        $(this).val(0)
+
+    } else if (quantity < minimum) {
+        $(this).val(minimum)
+
+    } else if (quantity > maximum) {
+        $(this).val(maximum)
+
     } else {
+        $(this).val(parseInt(quantity, 10))
+    }
+});
 
+//update total dollar amount
+
+$(".quantity-input").change(function () {
+
+    var quantElemArray = document.querySelectorAll(".quantity-input"),
+        checkoutButton = document.getElementById("checkout-button"),
+        totalDollarAmount = 0;
+
+    for (quantElem of quantElemArray) {
+
+        var elemValue = quantElem.value,
+            matchExpression = /\d+\.*\d+/g,
+            itemPrice = $(quantElem).prev().html().match(matchExpression),
+            totalItemDollars = elemValue * itemPrice;
+
+        totalDollarAmount += totalItemDollars;
+        document.getElementById("total-dollar-amount").innerHTML =
+            "$" + totalDollarAmount.toFixed(2);
+    }
+    if (totalDollarAmount != 0) {
+        checkoutButton.style.display = "block"
+    } else {
+        checkoutButton.style.display = "none"
     };
 });
 
-//update item quantity and total dollar amount with plus button
+//pop-up window functionality
+var checkoutButton = document.getElementById("checkout-button"),
+    checkoutPopUp = document.getElementById("checkout-pop-up"),
+    cancel = document.getElementById("cancel"),
+    greyOut = document.getElementById("grey-out"),
+    bodyObject = document.body;
 
-$(".plus").click(function () {
-    //update item quantity
-    var currentQuant = $(this).prev().html()
-    var parsedQuant = parseInt(currentQuant)
-    var newQuant = parsedQuant + 1
-    $(this).prev().html(newQuant)
+checkoutButton.onclick = function () {
+    checkoutPopUp.style.display = "block";
+    greyOut.style.display = "block";
+    bodyObject.classList.add("only-pop-up")
+};
 
-    //update total dollar amount
-    var matchExpression = /\d+\.*\d+/g
-    var itemPrice = $(this).parent().prev().html().match(matchExpression)
-    var currentTotalNumber = $("#total-dollar-amount").html().match(matchExpression)
-    var newTotalNumber = (Number(currentTotalNumber) + Number(itemPrice)).toFixed(2)
-    var newTotalHtml = "$" + newTotalNumber
-    $("#total-dollar-amount").html(newTotalHtml)
-});
+cancel.onclick = function () {
+    checkoutPopUp.style.display = "none";
+    greyOut.style.display = "none";
+    bodyObject.classList.remove("only-pop-up")
+};

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='cafe.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lora:ital@1&family=Tangerine:wght@400;700&display=swap" 
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lora:ital@1&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>Place Order</title>
 </head>
+
 <body>
     <header>
         <a class='header-box' href='cafe_home.html'>
             <div class='header-box'>
-                <div class='sub-box'><h1>Caf&#233; Kansas</h1></div>
+                <div class='sub-box'>
+                    <h1>Caf&#233; Kansas</h1>
+                </div>
                 <div class='sub-box2'>
                     <img class='sunflower' src='sunflower.png' alt='Sunflower'>
                 </div>
@@ -38,45 +43,40 @@
                 <div class='itemGroup'>
                     <div class='select-items-box'>
                         <label class='order-item'>Cappuccino ($3.00)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Espresso ($2.50)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Caff&#233; Mocha ($3.25)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
-                    </div>  
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
+                    </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Chai Latte ($3.00)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
-                    </div>   
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
+                    </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Iced Latte ($2.75)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
-                    </div>     
-                </div> 
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
+                    </div>
+                </div>
             </div>
             <div class='form-sub-right'>
                 <div class='button-box'>
@@ -86,35 +86,31 @@
                 <div class='itemGroup'>
                     <div class='select-items-box'>
                         <label class='order-item'>Green Tea ($2.25)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
-                    </div>       
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
+                    </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Orange Juice ($2.25)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Chocolate Milk ($2.50)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Holiday Milk ($3.00)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                 </div>
             </div>
@@ -129,27 +125,24 @@
                 <div class='itemGroup'>
                     <div class='select-items-box'>
                         <label class='order-item'>Salmon Bisque ($8.50)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Tomato Soup ($8.25)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Cream of Chicken ($8.25)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                 </div>
             </div>
@@ -161,35 +154,31 @@
                 <div class='itemGroup'>
                     <div class='select-items-box'>
                         <label class='order-item'>Omelette ($8.25)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Grilled Cheese ($6.50)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Blueberry Scone ($4.50)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                     <div class='select-items-box'>
                         <label class='order-item'>Blueberry Muffin ($3.50)</label>
-                        <div class='quantity-box'>
-                            <button class='minus' type='button'>-</button>
-                            <div class='quantity'>0</div>
-                            <button class='plus' type='button'>+</button>
-                        </div>
+                        <input 
+                        class='quantity-input' type='number' min='0' max='15' 
+                        value='0' autocomplete='off'
+                        >
                     </div>
                 </div>
             </div>
@@ -199,9 +188,18 @@
             <div id='total-dollar-amount'>$0.00</div>
         </div>
         <div id='checkout-box'>
-            <button type='button' id='checkout-text'>Checkout</button>
+            <button type='button' id='checkout-button'>Checkout</button>
         </div>
+        <aside id='checkout-pop-up'>
+            <label id='email-label'>Please enter an email if you would like an electronic 
+                confirmation of your order:
+            </label>
+            <input type='text' name='email-input' id='email-input'>
+            <button type='button' id='submit'>Submit</button>
+            <button type='button' id='cancel'>Cancel</button>
+        </aside>
     </form>
+    <div id='grey-out'></div>
     <footer>
         <ul>
             <li><a href='cafe_home.html'>Home</a></li>
@@ -213,4 +211,5 @@
     <script src='jquery-3.6.0.js'></script>
     <script src='cafe_order.js'></script>
 </body>
+
 </html>
