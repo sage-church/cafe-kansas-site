@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    background-repeat: no-repeat;
+    background-image: url(../cafe_kansas_pics/k.jpg);
+}
+header{
+    padding-left: 1.5%;
+    padding-top: 0.5%;
+    display: flex;
+}
+.sub-box{
+    width: 60%;
+    float: left;
+}
+.sub-box2{
+    width: 40%;
+    float: left;
+    height: 100%;
+}
+.sunflower{
+    width: 110px;
+    height: 95%;
+    margin-top: 5px;
+}
+header ul{
+    list-style-type: none;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+header li{
+    float: left;
+}
+header li a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+header li a:visited{
+    color: black;
+}
+header li a:hover{
+    box-shadow: 0 0 5px 2px black;
+}
+header li a:active{
+    box-shadow: 0 0 5px 2px tan;
+}
+h1{
+    font-size: 45px;
+    font-weight: normal;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+h3{
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+h4{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+hr{
+    border: 1px dashed black;
+}
+.divider-div{
+    height: 450px;
+    margin-top: 60px;
+    background-color: rgba(210, 180, 140, 0.466);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 80px;
+    width: 100%;
+    margin: 0;
+}
+footer ul{
+    height: 50px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+footer li{
+    display: inline-block;
+}
+footer li a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    background-color:rgba(231, 189, 135, 0.356);
+}
+footer li a:visited{
+    color: black;
+}
+footer li a:hover{
+    background-color:rgba(231, 189, 135, 0.568);
+}
+footer li a:active{
+    text-decoration: underline;
+    color: rgb(95, 67, 49);
+}
+.header-box{
+    width: 310px;
+    height: 100px;
+    border-radius: 10px;
+}
+.header-box:visited{
+    color: black;
+}
+.header-box:hover{
+    box-shadow: 0 0 25px 5px rgba(128, 128, 128, 0.479);
+    background-color: rgba(128, 128, 128, 0.26);
+}
+.header-box:active{
+    box-shadow: 0 0 10px 5px rgba(210, 180, 140, 0.61);
+    background-color: rgba(210, 180, 140, 0.61);
+}

@@ -75,6 +75,8 @@ var checkoutButton = document.getElementById("checkout-button"),
     firstNameInputBox = document.getElementById("first-name"),
     lastNameInputBox = document.getElementById("last-name"),
     phoneInputBox = document.getElementById("phone"),
+    thankYouPopUp = document.getElementById("thank-you-pop-up"),
+    exit = document.getElementById("exit")
     phoneExp = /^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$/;
 
 //display checkout pop-up window and disable rest of page
@@ -152,6 +154,14 @@ submitButton.onclick = function () {
     if (firstNameInputBox.value != "" &&
         lastNameInputBox.value != "" &&
         phoneExp.test(phoneInputBox.value) == true) {
-            
+            checkoutPopUp.style.display = "none";
+            thankYouPopUp.style.display = "flex";
         }
 };
+
+//exit thank you pop-up
+exit.onclick = function () {
+    thankYouPopUp.style.display = "none"
+    greyOut.style.display = "none";
+    bodyObject.classList.remove("only-pop-up");
+}

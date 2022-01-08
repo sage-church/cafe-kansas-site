@@ -1,0 +1,12 @@
+.about-header{
+    height: 30px;
+    margin-top: 7.5%;
+    margin-left: 40px;
+    font-weight: normal;
+    font-size: 25px;
+    font-style: italic;
+}
+.about-p{
+    width: 70%;
+    margin-left: 5%;
+}

@@ -1,0 +1,19 @@
+.contact-header{
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    font-style: italic;
+}
+address{
+    text-align: center;
+    font-size: 14px;
+}
+.sub-contact-div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.add-info{
+    margin: 10px;
+}

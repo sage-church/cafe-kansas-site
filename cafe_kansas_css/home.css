@@ -1,0 +1,59 @@
+h2.menu{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+h2.menu::before, h2.menu:after{
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 9%;
+    height: 1.3px;
+    content: '/a0';
+    background-color: black;
+}
+h2.menu:before {
+    margin-left: -10%;
+    text-align: right;
+}
+h2.menu:after{
+    margin-left: 1%;
+}
+.menu-title{
+    margin-top: 25px;
+}
+.menu-box{
+    background-image: url(../cafe_kansas_pics/tan.jpg);
+    background-size: cover;
+    width: 85%;
+    height: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 30px 5px;
+}
+.categories{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border: 1px solid transparent;
+}
+.ind-box{
+    width: 95%;
+    height: 90%;
+    border: 1px;
+}
+section.items{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.price{
+    float: right;
+}
