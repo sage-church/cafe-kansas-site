@@ -31,7 +31,7 @@
             <li><a href='cafe_contact.html'>Contact Us</a></li>
         </ul>
     </header>
-    <form class='order-form'>
+    <form class='order-form' method="post">
         <h5 class='order-header'>Place Order</h5>
         <div class='order-div'>
             <h5 class='order-categ-header'>Beverages</h5>
@@ -185,19 +185,42 @@
         </div>
         <div class='total-box'>
             <div id='order-total-text'>Order total :</div>
-            <div id='total-dollar-amount'>$0.00</div>
+            <input type='text' value='$0.00' id='total-dollar-amount' autocomplete='off' readonly>
         </div>
         <div id='checkout-box'>
             <button type='button' id='checkout-button'>Checkout</button>
         </div>
         <aside id='checkout-pop-up'>
-            <label id='email-label'>Please enter an email if you would like an electronic 
-                confirmation of your order:
-            </label>
-            <input type='text' name='email-input' id='email-input'>
-            <button type='button' id='submit'>Submit</button>
-            <button type='button' id='cancel'>Cancel</button>
+            <div id='info-note'>Please enter the following information:</div>
+            <div>
+                <label for='first-name' id='first-name-label'>First name:</label>
+                <input type="text" name='first-name' id='first-name' maxlength="30" 
+                autocomplete="off" required
+                >
+            </div>
+            <div>
+                <label for='last-name' id='last-name-label'>Last name:</label>
+                <input type='text' name='last-name' id='last-name' maxlength="30"
+                autocomplete="off" required
+                >
+            </div>
+            <div>
+                <label for='phone' id='phone-label'>Phone:</label>
+                <input type='tel' name='phone' id='phone' placeholder='###-###-####'
+                pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' maxlength="12" 
+                autocomplete="off" required
+                >
+            </div>
+            <div id='grand-total-box'>
+                <div>Your total:</div>
+                <div id='grand-total-div'></div>
+            </div>
+            <div id='submit-cancel-div'>
+                <input type='button' id='submit' value='Submit'>
+                <button type='button' id='cancel'>Cancel</button>
+            </div>
         </aside>
+        <aside id="thank-you-pop-up"></aside>
     </form>
     <div id='grey-out'></div>
     <footer>
