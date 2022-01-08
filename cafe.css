@@ -391,9 +391,6 @@ section.items{
 #checkout-pop-up{
     pointer-events: all;
 }
-#thank-you-pop-up{
-    pointer-events: all;
-}
 #checkout-pop-up{
     display: none;
     position: fixed;
@@ -468,6 +465,54 @@ section.items{
 #cancel{
     width: 60px;
     font-size: 14px;
+}
+#thank-you-pop-up{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 457px;
+    height: 300px;
+    border: solid 3px black;
+    border-radius: 20px;
+    background-color: rgb(221, 221, 221);
+    pointer-events: all;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.checkmark{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+}
+.checkmark-circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #64a0df;
+    border-radius: 50px;
+    left: 0;
+    top: 0;
+}
+.checkmark-stem{
+    position: absolute;
+    width: 15px;
+    height: 50px;
+    background-color: white;
+    left: 53px;
+    top: 19px;
+}
+.checkmark-kick{
+    position: absolute;
+    width: 34px;
+    height: 15.1px;
+    background-color: white;
+    left: 34px;
+    top: 54px;
 }
 #grey-out{
     display: none;
