@@ -1,48 +1,70 @@
+html{
+    height: 100%;
+    background:
+        linear-gradient(to bottom,  
+        rgba(128, 181, 250, 0.788) 10%, 
+        rgba(180, 210, 243, 0.726) 25%, 
+        rgba(188, 225, 255, 0.74) 50%,
+        rgba(180, 210, 243, 0.726) 75%,
+        rgba(128, 181, 250, 0.788) 100%);
+        
+}
 body{
     margin: 0;
-    background-repeat: no-repeat;
-    background-image: url(../cafe_kansas_pics/k.jpg);
+    /* background: 
+        linear-gradient(to bottom,  
+        rgba(128, 181, 250, 0.788) 10%, 
+        rgba(180, 210, 243, 0.726) 20%, 
+        rgba(188, 225, 255, 0.74) 30%,
+        rgba(51, 112, 51, 0.658) 90%); */
+  
+    /* background-image: url(../cafe_kansas_pics/k.jpg); */
 }
 header{
     padding-left: 1.5%;
     padding-top: 0.5%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.sub-box{
-    width: 60%;
+.title-logo-box{
+    min-width: 310px;
+    height: 100px;
+}
+.title-box{
+    width: 186px;
     float: left;
 }
-.sub-box2{
-    width: 40%;
+.logo-box{
+    width: 120px;
     float: left;
     height: 100%;
+    text-align: center;
 }
 .sunflower{
     width: 110px;
     height: 95%;
     margin-top: 5px;
 }
-header ul{
+ul{
+    display: flex;
     list-style-type: none;
-    margin-left: 40%;
-    margin-top: 2%;
+    padding: 0 10px 0 0;
+    margin-bottom: 0;
 }
-header li{
-    float: left;
-}
-header li a{
+li a{
     display: block;
     padding: 10px;
     text-align: center;
     color: black;
 }
-header li a:visited{
+li a:visited{
     color: black;
 }
-header li a:hover{
+li a:hover{
     box-shadow: 0 0 5px 2px black;
 }
-header li a:active{
+li a:active{
     box-shadow: 0 0 5px 2px tan;
 }
 h1{
@@ -78,28 +100,26 @@ hr{
 }
 .divider-div{
     height: 450px;
-    margin-top: 60px;
-    background-color: rgba(210, 180, 140, 0.466);
+    margin-top: 5%;
+    background-color: rgba(210, 180, 140, 0.753);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: column;
 }
 footer{
+    margin: 0 0 25px 0;
     height: 80px;
-    width: 100%;
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 footer ul{
     height: 50px;
     list-style-type: none;
     text-align: center;
     margin-top: 2%;
-    padding-left: 30%;
-    padding-right: 30%;
-}
-footer li{
-    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 footer li a{
     display: block;
@@ -107,31 +127,26 @@ footer li a{
     text-align: center;
     text-decoration: underline;
     color: black;
-    background-color:rgba(231, 189, 135, 0.356);
+    background-color:rgba(231, 189, 135, 0.596);
 }
 footer li a:visited{
     color: black;
 }
 footer li a:hover{
-    background-color:rgba(231, 189, 135, 0.568);
+    background-color:rgba(231, 189, 135, 0.966);
 }
 footer li a:active{
     text-decoration: underline;
     color: rgb(95, 67, 49);
 }
-.header-box{
-    width: 310px;
-    height: 100px;
-    border-radius: 10px;
-}
-.header-box:visited{
+.title-link:visited{
     color: black;
 }
-.header-box:hover{
+.title-link:hover{
     box-shadow: 0 0 25px 5px rgba(128, 128, 128, 0.479);
     background-color: rgba(128, 128, 128, 0.26);
 }
-.header-box:active{
+.title-link:active{
     box-shadow: 0 0 10px 5px rgba(210, 180, 140, 0.61);
     background-color: rgba(210, 180, 140, 0.61);
 }

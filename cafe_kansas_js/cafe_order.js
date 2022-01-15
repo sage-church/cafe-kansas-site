@@ -5,9 +5,9 @@ $(".showOrHideButton").click(function () {
         $(this).parent().next().css("display") == "none" ||
         $(this).parent().next().css("display") == ""
     ) {
-        $(this).html("(Hide items)")
+        $(this).html("&#8211;")
     } else {
-        $(this).html("(Show items)")
+        $(this).html("+")
     };
 });
 
@@ -67,7 +67,7 @@ $(".quantity-input").change(function () {
 //variables for pop-up window functionality
 var checkoutButton = document.getElementById("checkout-button"),
     checkoutPopUp = document.getElementById("checkout-pop-up"),
-    grandTotalDiv = document.getElementById("grand-total-div"),
+    dollarDiv = document.getElementById("dollar-div"),
     cancel = document.getElementById("cancel"),
     greyOut = document.getElementById("grey-out"),
     bodyObject = document.body,
@@ -83,8 +83,8 @@ var checkoutButton = document.getElementById("checkout-button"),
 checkoutButton.onclick = function () {
     var grandTotal = document.getElementById("total-dollar-amount").value;
 
-    checkoutPopUp.style.display = "block";
-    grandTotalDiv.innerHTML = grandTotal;
+    checkoutPopUp.style.display = "flex";
+    dollarDiv.innerHTML = grandTotal;
     greyOut.style.display = "block";
     bodyObject.classList.add("only-pop-up")
 };
@@ -139,12 +139,12 @@ submitButton.onclick = function () {
 
     if (firstNameInputBox.value == "") {
         firstNameInputBox.style.border = "red solid 2px"
-        firstNameInputBox.setAttribute("placeholder", "Please enter first name")
+        firstNameInputBox.setAttribute("placeholder", "Required")
     };
 
     if (lastNameInputBox.value == "") {
         lastNameInputBox.style.border = "red solid 2px"
-        lastNameInputBox.setAttribute("placeholder", "Please enter last name")
+        lastNameInputBox.setAttribute("placeholder", "Required")
     };
 
     if (phoneExp.test(phoneInputBox.value) == false) {
