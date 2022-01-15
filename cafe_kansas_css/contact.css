@@ -1,7 +1,7 @@
-.contact-header{
+#contact-header{
     height: 30px;
     min-width: 270px;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
     font-weight: normal;
@@ -21,11 +21,4 @@
     padding: 10px;
     font-size: 18px;
     min-width: 254px;
-}
-.sub-contact-div{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.add-info{
-    margin: 10px;
 }
