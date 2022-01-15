@@ -7,18 +7,9 @@ html{
         rgba(188, 225, 255, 0.74) 50%,
         rgba(180, 210, 243, 0.726) 75%,
         rgba(128, 181, 250, 0.788) 100%);
-        
 }
 body{
     margin: 0;
-    /* background: 
-        linear-gradient(to bottom,  
-        rgba(128, 181, 250, 0.788) 10%, 
-        rgba(180, 210, 243, 0.726) 20%, 
-        rgba(188, 225, 255, 0.74) 30%,
-        rgba(51, 112, 51, 0.658) 90%); */
-  
-    /* background-image: url(../cafe_kansas_pics/k.jpg); */
 }
 header{
     padding-left: 1.5%;
@@ -27,44 +18,55 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.title-logo-box{
+#title-and-logo-box{
     min-width: 310px;
     height: 100px;
 }
-.title-box{
+#title-box{
     width: 186px;
     float: left;
 }
-.logo-box{
+#title-link:visited{
+    color: black;
+}
+#title-link:hover{
+    box-shadow: 0 0 25px 5px rgba(128, 128, 128, 0.479);
+    background-color: rgba(128, 128, 128, 0.26);
+}
+#title-link:active{
+    box-shadow: 0 0 10px 5px rgba(210, 180, 140, 0.61);
+    background-color: rgba(210, 180, 140, 0.61);
+}
+#logo-box{
     width: 120px;
     float: left;
     height: 100%;
     text-align: center;
 }
-.sunflower{
+#sunflower{
     width: 110px;
     height: 95%;
     margin-top: 5px;
 }
-ul{
+#header-link-list{
     display: flex;
     list-style-type: none;
-    padding: 0 10px 0 0;
+    padding: 0 20px 0 0;
     margin-bottom: 0;
 }
-li a{
+#header-link-list a{
     display: block;
     padding: 10px;
     text-align: center;
     color: black;
 }
-li a:visited{
+#header-link-list a:visited{
     color: black;
 }
-li a:hover{
+#header-link-list a:hover{
     box-shadow: 0 0 5px 2px black;
 }
-li a:active{
+#header-link-list a:active{
     box-shadow: 0 0 5px 2px tan;
 }
 h1{
@@ -74,18 +76,18 @@ h1{
     font-weight: 700;
 }
 h2{
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Tangerine', cursive;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 52px;
     margin-bottom: 10px;
 }
 h3{
     font-family: 'Tangerine', cursive;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 h4{
     text-align: center;
@@ -99,7 +101,8 @@ hr{
     border: 1px dashed black;
 }
 .divider-div{
-    height: 450px;
+    padding: 30px 0 30px 0;
+    /* height: 450px; */
     margin-top: 5%;
     background-color: rgba(210, 180, 140, 0.753);
     border-top: 2px solid black;
@@ -115,40 +118,30 @@ footer{
     display: flex;
     justify-content: center;
 }
-footer ul{
+#footer-link-list{
     height: 50px;
     list-style-type: none;
     text-align: center;
     margin-top: 2%;
     padding-left: 20%;
     padding-right: 20%;
+    display: flex;
 }
-footer li a{
+#footer-link-list a{
     display: block;
     padding: 10px;
     text-align: center;
     text-decoration: underline;
     color: black;
-    background-color:rgba(231, 189, 135, 0.596);
+    background-color:rgba(240, 190, 124, 0.596);
 }
-footer li a:visited{
+#footer-link-list a:visited{
     color: black;
 }
-footer li a:hover{
-    background-color:rgba(231, 189, 135, 0.966);
+#footer-link-list a:hover{
+    background-color:rgba(165, 138, 98, 0.808);
 }
-footer li a:active{
+#footer-link-list a:active{
     text-decoration: underline;
     color: rgb(95, 67, 49);
-}
-.title-link:visited{
-    color: black;
-}
-.title-link:hover{
-    box-shadow: 0 0 25px 5px rgba(128, 128, 128, 0.479);
-    background-color: rgba(128, 128, 128, 0.26);
-}
-.title-link:active{
-    box-shadow: 0 0 10px 5px rgba(210, 180, 140, 0.61);
-    background-color: rgba(210, 180, 140, 0.61);
 }
