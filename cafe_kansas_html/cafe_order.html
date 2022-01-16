@@ -33,167 +33,165 @@
         </ul>
     </header>
     <main>
-        <form class='order-form' method="post">
-            <h5 class='order-header'>Place Order</h5>
-            <div class='order-div'>
-                <h5 class='order-categ-header'>Beverages</h5>
-                <div id="beverages-div">
-                    <div class='form-sub-left'>
-                        <div class='button-box'>
-                            <div class='order-sub'>Coffee</div>
-                            <div class='showOrHideButton'>+</div>
+        <form id='order-form' method="post">
+            <h5 id='order-header'>Place Order</h5>
+            <h5 class='product-category-header'>Beverages</h5>
+            <div class='two-form-tiles'>
+                <div class='form-tile-left'>
+                    <div class='tile-header'>
+                        <div class='tile-title'>Coffee</div>
+                        <div class='tile-show-or-hide'>+</div>
+                    </div>
+                    <div class='item-options'>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Cappuccino ($3.00)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
-                        <div class='itemGroup'>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Cappuccino ($3.00)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Espresso ($2.50)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Caff&#233; Mocha ($3.25)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Chai Latte ($3.00)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Iced Latte ($2.75)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Espresso ($2.50)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Caff&#233; Mocha ($3.25)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Chai Latte ($3.00)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Iced Latte ($2.75)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
                     </div>
-                    <div class='form-sub-right'>
-                        <div class='button-box'>
-                            <div class='order-sub'>Not Coffee</div>
-                            <div class='showOrHideButton'>+</div>
+                </div>
+                <div class='form-tile-right'>
+                    <div class='tile-header'>
+                        <div class='tile-title'>Not Coffee</div>
+                        <div class='tile-show-or-hide'>+</div>
+                    </div>
+                    <div class='item-options'>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Green Tea ($2.25)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
-                        <div class='itemGroup'>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Green Tea ($2.25)</label>
-                                <input 
+                        <div class='select-item-box'>
+                            <label class='order-item'>Orange Juice ($2.25)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Chocolate Milk ($2.50)</label>
+                            <input 
                                 class='quantity-input' type='number' min='0' max='15' 
                                 value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Orange Juice ($2.25)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Chocolate Milk ($2.50)</label>
-                                <input 
-                                    class='quantity-input' type='number' min='0' max='15' 
-                                    value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Holiday Milk ($3.00)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Holiday Milk ($3.00)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
                     </div>
                 </div>
             </div>
-            <div class='order-div'>
-                <h5 class='order-categ-header'>Snacks</h5>
-                <div id="snacks-div">
-                    <div class='form-sub-left'>
-                        <div class='button-box'>
-                            <div class='order-sub'>Soups</div>
-                            <div class='showOrHideButton'>+</div>
+            <h5 class='product-category-header'>Snacks</h5>
+            <div class='two-form-tiles'>
+                <div class='form-tile-left'>
+                    <div class='tile-header'>
+                        <div class='tile-title'>Soups</div>
+                        <div class='tile-show-or-hide'>+</div>
+                    </div>
+                    <div class='item-options'>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Salmon Bisque ($8.50)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
-                        <div class='itemGroup'>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Salmon Bisque ($8.50)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Tomato Soup ($8.25)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Cream of Chicken ($8.25)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Tomato Soup ($8.25)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Cream of Chicken ($8.25)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
                     </div>
-                    <div class='form-sub-right'>
-                        <div class='button-box'>
-                            <div class='order-sub'>Other Snacks</div>
-                            <div class='showOrHideButton'>+</div>
+                </div>
+                <div class='form-tile-right'>
+                    <div class='tile-header'>
+                        <div class='tile-title'>Other Snacks</div>
+                        <div class='tile-show-or-hide'>+</div>
+                    </div>
+                    <div class='item-options'>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Omelette ($8.25)</label>
+                            <input 
+                                class='quantity-input' type='number' min='0' max='15' 
+                                value='0' autocomplete='off'
+                            >
                         </div>
-                        <div class='itemGroup'>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Omelette ($8.25)</label>
-                                <input 
-                                    class='quantity-input' type='number' min='0' max='15' 
-                                    value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Grilled Cheese ($6.50)</label>
-                                <input 
-                                    class='quantity-input' type='number' min='0' max='15' 
-                                    value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Blueberry Scone ($4.50)</label>
-                                <input 
+                        <div class='select-item-box'>
+                            <label class='order-item'>Grilled Cheese ($6.50)</label>
+                            <input 
                                 class='quantity-input' type='number' min='0' max='15' 
                                 value='0' autocomplete='off'
-                                >
-                            </div>
-                            <div class='select-items-box'>
-                                <label class='order-item'>Blueberry Muffin ($3.50)</label>
-                                <input 
-                                class='quantity-input' type='number' min='0' max='15' 
-                                value='0' autocomplete='off'
-                                >
-                            </div>
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Blueberry Scone ($4.50)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
+                        </div>
+                        <div class='select-item-box'>
+                            <label class='order-item'>Blueberry Muffin ($3.50)</label>
+                            <input 
+                            class='quantity-input' type='number' min='0' max='15' 
+                            value='0' autocomplete='off'
+                            >
                         </div>
                     </div>
                 </div>
             </div>
             <div class='total-box'>
                 <div id='order-total-text'>Order total :</div>
-                <input type='text' value='$0.00' id='total-dollar-amount' autocomplete='off' readonly>
+                <input type='text' value='$0.00' id='total-dollar-amount' 
+                    autocomplete='off' readonly
+                >
             </div>
-            <div id='checkout-box'>
+            <div id='checkout-button-box'>
                 <button type='button' id='checkout-button'>Checkout</button>
             </div>
             <aside id='checkout-pop-up'>
@@ -230,23 +228,23 @@
                     </div>
                 </div>
             </aside>
-            <aside id="thank-you-pop-up">
-                <div id="success-exit">
-                    <div>Order Successful</div>
-                    <div id="exit">x</div>
-                </div>
-                <div>
-                    <span class="checkmark">
-                        <div class="checkmark-circle"></div>
-                        <div class="checkmark-stem"></div>
-                        <div class="checkmark-kick"></div>
-                    </span>
-                </div>
-                <div id="thanks-message">
-                    Thank you for choosing Caf&#233; Kansas!
-                </div>
-            </aside>
         </form>
+        <aside id="thank-you-pop-up">
+            <div id="success-exit">
+                <div>Order Successful</div>
+                <div id="exit">x</div>
+            </div>
+            <div>
+                <span class="checkmark">
+                    <div class="checkmark-circle"></div>
+                    <div class="checkmark-stem"></div>
+                    <div class="checkmark-kick"></div>
+                </span>
+            </div>
+            <div id="thanks-message">
+                Thank you for choosing Caf&#233; Kansas!
+            </div>
+        </aside>
         <div id='grey-out'></div>
     </main>
     <footer>

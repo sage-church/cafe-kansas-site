@@ -1,6 +1,6 @@
 //handle toggle of menu categories on Place Order page
 
-$(".showOrHideButton").click(function () {
+$(".tile-show-or-hide").click(function () {
     if (
         $(this).parent().next().css("display") == "none" ||
         $(this).parent().next().css("display") == ""
@@ -11,7 +11,7 @@ $(".showOrHideButton").click(function () {
     };
 });
 
-$(".showOrHideButton").click(function () {
+$(".tile-show-or-hide").click(function () {
     $(this).parent().next().slideToggle("fast")
 });
 
@@ -43,7 +43,7 @@ $(".quantity-input").change(function () {
 $(".quantity-input").change(function () {
 
     var quantElemArray = document.querySelectorAll(".quantity-input"),
-        checkoutButton = document.getElementById("checkout-button"),
+        checkoutButtonBox = document.getElementById("checkout-button-box"),
         totalDollarAmount = 0;
 
     for (quantElem of quantElemArray) {
@@ -58,9 +58,9 @@ $(".quantity-input").change(function () {
             "$" + totalDollarAmount.toFixed(2);
     }
     if (totalDollarAmount != 0) {
-        checkoutButton.style.display = "block"
+        checkoutButtonBox.style.display = "flex"
     } else {
-        checkoutButton.style.display = "none"
+        checkoutButtonBox.style.display = "none"
     };
 });
 
