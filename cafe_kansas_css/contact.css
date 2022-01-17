@@ -1,8 +1,7 @@
 #contact-header{
     height: 30px;
     min-width: 270px;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 10px 0 0 0;
     text-align: center;
     font-weight: normal;
     font-size: 28px;

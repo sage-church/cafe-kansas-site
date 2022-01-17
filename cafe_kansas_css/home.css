@@ -36,9 +36,7 @@
     align-items: center;
     width: 85%;
     min-width: 273px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 30px auto 40px auto;
     box-shadow: 0 0 30px 5px;
 }
 .product-category{
