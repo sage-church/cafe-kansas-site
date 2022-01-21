@@ -1,9 +1,7 @@
 @font-face {
     font-family: "Tangerine";
-    src: local('../cafe_kansas_fonts/Tangerine-Bold.eot');
-    src: local('../cafe_kansas_fonts/Tangerine-Bold.ttf') format('truetype'),
-         local('../cafe_kansas_fonts/Tangerine-Bold.woff') format('woff'),
-         local('../cafe_kansas_fonts/Tangerine-Bold.woff2') format('woff2');
+    
+    src: local('../cafe_kansas_fonts/Tangerine-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }

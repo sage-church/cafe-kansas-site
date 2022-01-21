@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Lora";
+    src: local('../cafe_kansas_fonts/Tangerine-Bold.eot');
+    src: local('../cafe_kansas_fonts/Tangerine-Bold.ttf') format('truetype'),
+         local('../cafe_kansas_fonts/Tangerine-Bold.woff') format('woff'),
+         local('../cafe_kansas_fonts/Tangerine-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 #menu-title{
     position: relative;
     overflow: hidden;

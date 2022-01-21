@@ -64,10 +64,10 @@ $(".quantity-input").change(function () {
     };
 });
 
-//variables for pop-up window functionality
+//variables for functionality of pop-up windows
 var checkoutButton = document.getElementById("checkout-button"),
     checkoutPopUp = document.getElementById("checkout-pop-up"),
-    dollarDiv = document.getElementById("dollar-div"),
+    popUptotal = document.getElementById("pop-up-total"),
     cancel = document.getElementById("cancel"),
     greyOut = document.getElementById("grey-out"),
     bodyObject = document.body,
@@ -81,15 +81,22 @@ var checkoutButton = document.getElementById("checkout-button"),
 
 //display checkout pop-up window and disable rest of page
 checkoutButton.onclick = function () {
-    var grandTotal = document.getElementById("total-dollar-amount").value;
+    var finalTotal = document.getElementById("total-dollar-amount").value;
 
     checkoutPopUp.style.display = "flex";
-    dollarDiv.innerHTML = grandTotal;
+    popUptotal.innerHTML = finalTotal;
     greyOut.style.display = "block";
     bodyObject.classList.add("only-pop-up")
 };
 
+//function to change input box styles indicating invalid input
+function invalidInputFormat () {
+    firstNameInputBox.style.border = "red solid 2px"
+    firstNameInputBox.setAttribute("placeholder", "Required")
+};
+
 //functions to revert input box styles
+
 function revertFirstNameStyle () {
     firstNameInputBox.style.border = "rgb(104 104 104) solid 1px"
     firstNameInputBox.setAttribute("placeholder", "")
@@ -104,6 +111,8 @@ function revertPhoneNumberStyle () {
 
 
 //cancel checkout pop-up
+//revert functions would only be applicable if styles have been changed due to...
+//      user submitting invalid entries
 cancel.onclick = function () {
     checkoutPopUp.style.display = "none";
     greyOut.style.display = "none";
@@ -113,38 +122,15 @@ cancel.onclick = function () {
     revertPhoneNumberStyle();
 };
 
-//revert input box styles on input change (if input is valid)
-firstNameInputBox.addEventListener("change", function () {
-    if (this.value != "") {
-        this.style.border = "rgb(104 104 104) solid 1px"
-        this.setAttribute("placeholder", "")
-    }
-});
-
-lastNameInputBox.addEventListener("change", function () {
-    if (this.value != "") {
-        this.style.border = "rgb(104 104 104) solid 1px"
-        this.setAttribute("placeholder", "")
-    }
-});
-
-phoneInputBox.addEventListener("change", function () {
-    if (phoneExp.test(phoneInputBox.value) == true) {
-        phoneInputBox.style.border = "rgb(104 104 104) solid 1px"
-    }
-});
-
 //verify inputs before submission
 submitButton.onclick = function () {
 
     if (firstNameInputBox.value == "") {
-        firstNameInputBox.style.border = "red solid 2px"
-        firstNameInputBox.setAttribute("placeholder", "Required")
+        invalidInputFormat();
     };
 
     if (lastNameInputBox.value == "") {
-        lastNameInputBox.style.border = "red solid 2px"
-        lastNameInputBox.setAttribute("placeholder", "Required")
+        invalidInputFormat();
     };
 
     if (phoneExp.test(phoneInputBox.value) == false) {
@@ -158,6 +144,25 @@ submitButton.onclick = function () {
             thankYouPopUp.style.display = "flex";
         }
 };
+
+//revert input box styles on input change (if input is valid)
+firstNameInputBox.addEventListener("change", function () {
+    if (this.value != "") {
+        revertFirstNameStyle();
+    }
+});
+
+lastNameInputBox.addEventListener("change", function () {
+    if (this.value != "") {
+        revertLastNameStyle();
+    }
+});
+
+phoneInputBox.addEventListener("change", function () {
+    if (phoneExp.test(phoneInputBox.value) == true) {
+        revertPhoneNumberStyle();
+    }
+});
 
 //exit thank you pop-up
 exit.onclick = function () {
