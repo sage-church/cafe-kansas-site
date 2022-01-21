@@ -1,7 +1,6 @@
 @font-face {
     font-family: "Tangerine";
-    
-    src: local('../cafe_kansas_fonts/Tangerine-Bold.woff') format('woff');
+    src: local("../cafe_kansas_fonts/Tangerine-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -72,19 +71,19 @@ header{
     box-shadow: 0 0 5px 2px tan;
 }
 h1{
+    font-family: "Tangerine", "serif";
     width: 172px;
     font-weight: 700;
     font-size: 45px;
-    font-family: 'Tangerine', cursive;
 }
 h2{
-    font-family: 'Tangerine', cursive;
+    font-family: "Tangerine", "serif";
     font-weight: 700;
     font-size: 52px;
     margin: 0 0 10px;
 }
 h3{
-    font-family: 'Tangerine', cursive;
+    font-family: "Tangerine", "serif";
     font-weight: 700;
     font-size: 45px;
     margin: 20px 0 20px;

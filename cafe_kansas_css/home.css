@@ -1,17 +1,14 @@
 @font-face {
     font-family: "Lora";
-    src: local('../cafe_kansas_fonts/Tangerine-Bold.eot');
-    src: local('../cafe_kansas_fonts/Tangerine-Bold.ttf') format('truetype'),
-         local('../cafe_kansas_fonts/Tangerine-Bold.woff') format('woff'),
-         local('../cafe_kansas_fonts/Tangerine-Bold.woff2') format('woff2');
-    font-weight: 700;
+    src: local("../cafe_kansas_fonts/Lora-Regular.woff") format("woff");
+    font-weight: 400;
     font-style: normal;
 }
 #menu-title{
     position: relative;
     overflow: hidden;
     text-align: center;
-    font-family: 'Tangerine', cursive;
+    font-family: "Tangerine", cursive;
     font-weight: 700;
     font-size: 55px;
     margin-bottom: 10px;
@@ -23,7 +20,7 @@
     overflow: hidden;
     width: 9%;
     height: 1.3px;
-    content: '/a0';
+    content: "/a0";
     background-color: black;
 }
 #menu-title:before {
@@ -60,9 +57,9 @@
     width: 95%;
 }
 .menu-items{
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400;
     margin-bottom: 25px;
 }
 .price{
