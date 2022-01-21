@@ -1,4 +1,4 @@
-#order-form{
+#order-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8,15 +8,17 @@
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-#order-header{
+
+#order-header {
     height: 30px;
     margin: 3% 0 50px 3%;
     font-weight: normal;
     font-size: 25px;
-    font-style:italic;
+    font-style: italic;
     text-decoration: underline;
 }
-.product-category-header{
+
+.product-category-header {
     height: 30px;
     margin: 25px 0 50px 0;
     text-align: center;
@@ -24,13 +26,15 @@
     font-size: 25px;
     font-style: normal;
 }
-.two-form-tiles{
+
+.two-form-tiles {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
 }
-.form-tile{
+
+.form-tile {
     min-width: 300px;
     width: 35%;
     min-height: 50px;
@@ -38,20 +42,23 @@
     text-align: center;
     border-style: outset;
 }
-.tile-header{
+
+.tile-header {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0 10px 0;
 }
-.tile-title{
+
+.tile-title {
     margin: auto;
     font-weight: normal;
     font-size: 20px;
     font-style: italic;
 }
-.tile-show-or-hide{
+
+.tile-show-or-hide {
     position: absolute;
     right: 3%;
     padding: 0 10px 0 10px;
@@ -59,13 +66,16 @@
     font-size: 15px;
     font-style: italic;
 }
-.tile-show-or-hide:hover{
+
+.tile-show-or-hide:hover {
     cursor: pointer;
 }
-.item-options{
+
+.item-options {
     display: none;
 }
-.select-item-box{
+
+.select-item-box {
     display: flex;
     justify-content: space-between;
     height: 25px;
@@ -73,28 +83,33 @@
     padding: 10px 0 10px 0;
     font-size: 15px;
 }
-.order-item{
+
+.order-item {
     margin: 0 0 0 30px;
     padding: 3px 10px 1px 10px;
 }
-.quantity-input{
+
+.quantity-input {
     width: 40px;
     padding: 0 0 0 10px;
     margin: 0 50px 0 0;
 }
-.total-box{
+
+.total-box {
     display: flex;
     justify-content: flex-end;
     height: 40px;
     margin: 0 8% 0 8%;
     padding: 5px 0 5px 0;
 }
-#order-total-text{
+
+#order-total-text {
     min-width: 111px;
     padding: 5px;
     margin: auto 2px auto 8px;
 }
-#total-dollar-amount{
+
+#total-dollar-amount {
     width: 60px;
     text-align: center;
     font-size: 15px;
@@ -102,29 +117,35 @@
     margin: auto 8px auto 2px;
     border: solid thin;
 }
-#checkout-button-box{
+
+#checkout-button-box {
     display: none;
     justify-content: flex-end;
     height: 40px;
     margin: 0 8% 0 8%;
     padding: 8px 0 15px 0;
 }
-#checkout-button{
+
+#checkout-button {
     width: 190px;
     align-items: center;
     justify-content: center;
     font-size: 20px;
 }
-#checkout-button:hover{
+
+#checkout-button:hover {
     cursor: pointer;
 }
-.only-pop-up{
+
+.only-pop-up {
     pointer-events: none;
 }
-#checkout-pop-up{
+
+#checkout-pop-up {
     pointer-events: all;
 }
-#checkout-pop-up{
+
+#checkout-pop-up {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -141,47 +162,57 @@
     border-radius: 20px;
     background-color: rgba(221, 221, 221, 0.952);
 }
-#info-note{
+
+#info-note {
     padding: 10px 0 0 10px;
 }
-#input-fields{
+
+#input-fields {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 80px;
     padding: 0 0 0 10px;
 }
-.input-label-and-field{
+
+.input-label-and-field {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 52%;
 }
-#first-name-label{
+
+#first-name-label {
     min-width: 95px;
 }
-#first-name{
+
+#first-name {
     width: 62%;
     min-width: 180px;
     align-self: flex-end;
 }
-#last-name-label{
+
+#last-name-label {
     min-width: 95px;
 }
-#last-name{
+
+#last-name {
     width: 62%;
     min-width: 180px;
     align-self: flex-end;
 }
-#phone-label{
+
+#phone-label {
     min-width: 95px;
 }
-#phone{
+
+#phone {
     width: 62%;
     min-width: 180px;
     align-self: flex-end;
 }
-#total-submit-cancel{
+
+#total-submit-cancel {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -189,10 +220,12 @@
     height: 90px;
     padding: 0 10px 10px 10px;
 }
-#grand-total-box{
+
+#grand-total-box {
     display: flex;
 }
-#dollar-div{
+
+#dollar-div {
     text-align: center;
     height: 18px;
     min-width: 80px;
@@ -200,19 +233,23 @@
     border: solid black 1px;
     background-color: white;
 }
-#submit-cancel-div{
+
+#submit-cancel-div {
     margin-left: auto;
     padding: 0 0 0 8px;
 }
-#submit{
+
+#submit {
     width: 60px;
     font-size: 14px;
 }
-#cancel{
+
+#cancel {
     width: 60px;
     font-size: 14px;
 }
-#thank-you-pop-up{
+
+#thank-you-pop-up {
     display: none;
     position: fixed;
     z-index: 2;
@@ -230,7 +267,8 @@
     align-items: center;
     justify-content: space-around;
 }
-#exit{
+
+#exit {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -239,16 +277,19 @@
     text-align: center;
     padding: 0 2px 3px 2px;
 }
-#exit:hover{
+
+#exit:hover {
     cursor: pointer;
 }
-.checkmark{
+
+.checkmark {
     display: inline-block;
     width: 100px;
     height: 100px;
     transform: rotate(45deg);
 }
-.checkmark-circle{
+
+.checkmark-circle {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -257,7 +298,8 @@
     left: 0;
     top: 0;
 }
-.checkmark-stem{
+
+.checkmark-stem {
     position: absolute;
     width: 15px;
     height: 50px;
@@ -265,7 +307,8 @@
     left: 53px;
     top: 19px;
 }
-.checkmark-kick{
+
+.checkmark-kick {
     position: absolute;
     width: 34px;
     height: 15.1px;
@@ -273,11 +316,13 @@
     left: 34px;
     top: 54px;
 }
-#thanks-message{
+
+#thanks-message {
     text-align: center;
-    padding: 0 10px 0 10px;  
+    padding: 0 10px 0 10px;
 }
-#grey-out{
+
+#grey-out {
     display: none;
     position: fixed;
     z-index: 1;

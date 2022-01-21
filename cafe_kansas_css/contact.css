@@ -1,4 +1,4 @@
-#contact-header{
+#contact-header {
     height: 30px;
     min-width: 270px;
     margin: 10px 0 0 0;
@@ -7,7 +7,8 @@
     font-size: 28px;
     font-style: italic;
 }
-#address{
+
+#address {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,7 +16,8 @@
     padding: 50px 0 30px 0;
     height: 180px;
 }
-.address-text{
+
+.address-text {
     text-align: center;
     padding: 10px;
     font-size: 18px;

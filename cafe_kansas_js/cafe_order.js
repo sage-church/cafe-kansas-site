@@ -77,7 +77,7 @@ var checkoutButton = document.getElementById("checkout-button"),
     phoneInputBox = document.getElementById("phone"),
     thankYouPopUp = document.getElementById("thank-you-pop-up"),
     exit = document.getElementById("exit")
-    phoneExp = /^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$/;
+phoneExp = /^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$/;
 
 //display checkout pop-up window and disable rest of page
 checkoutButton.onclick = function () {
@@ -90,22 +90,22 @@ checkoutButton.onclick = function () {
 };
 
 //function to change input box styles indicating invalid input
-function invalidInputFormat () {
+function invalidInputFormat() {
     firstNameInputBox.style.border = "red solid 2px"
     firstNameInputBox.setAttribute("placeholder", "Required")
 };
 
 //functions to revert input box styles
 
-function revertFirstNameStyle () {
+function revertFirstNameStyle() {
     firstNameInputBox.style.border = "rgb(104 104 104) solid 1px"
     firstNameInputBox.setAttribute("placeholder", "")
 }
-function revertLastNameStyle () {
+function revertLastNameStyle() {
     lastNameInputBox.style.border = "rgb(104 104 104) solid 1px"
     lastNameInputBox.setAttribute("placeholder", "")
 }
-function revertPhoneNumberStyle () {
+function revertPhoneNumberStyle() {
     phoneInputBox.style.border = "rgb(104 104 104) solid 1px"
 }
 
@@ -140,9 +140,9 @@ submitButton.onclick = function () {
     if (firstNameInputBox.value != "" &&
         lastNameInputBox.value != "" &&
         phoneExp.test(phoneInputBox.value) == true) {
-            checkoutPopUp.style.display = "none";
-            thankYouPopUp.style.display = "flex";
-        }
+        checkoutPopUp.style.display = "none";
+        thankYouPopUp.style.display = "flex";
+    }
 };
 
 //revert input box styles on input change (if input is valid)

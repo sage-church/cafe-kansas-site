@@ -4,7 +4,8 @@
     font-weight: 400;
     font-style: normal;
 }
-#menu-title{
+
+#menu-title {
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -14,7 +15,8 @@
     margin-bottom: 10px;
     font-weight: normal;
 }
-#menu-title::before, #menu-title:after{
+
+#menu-title::before, #menu-title:after {
     position: absolute;
     top: 50%;
     overflow: hidden;
@@ -23,18 +25,22 @@
     content: "/a0";
     background-color: black;
 }
+
 #menu-title:before {
     margin-left: -10%;
     text-align: right;
 }
-#menu-title:after{
+
+#menu-title:after {
     margin-left: 1%;
 }
-#menu-title-box{
+
+#menu-title-box {
     margin-top: 25px;
     min-width: 280px;
 }
-#menu-box{
+
+#menu-box {
     background-image: url(../cafe_kansas_pics/tan.jpg);
     background-size: cover;
     display: flex;
@@ -45,7 +51,8 @@
     margin: 30px auto 40px auto;
     box-shadow: 0 0 30px 5px;
 }
-.product-category{
+
+.product-category {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,15 +60,18 @@
     width: 90%;
     padding: 30px 0 30px 0;
 }
-.product-sub-category{
+
+.product-sub-category {
     width: 95%;
 }
-.menu-items{
+
+.menu-items {
     font-family: "Lora", serif;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 25px;
 }
-.price{
+
+.price {
     float: right;
 }
