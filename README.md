@@ -8,7 +8,7 @@ BUILT WITH:
 
 USING THE SITE:
 
-The files are organized by file type. All html files should be within a folder named 'cafe_kansas_html', css files need to be in a folder named 'cafe_kansas_css', picture files in a folder named 'cafe_kansas_pics', javascript files in a folder named 'cafe_kansas_js', and fonts in a folder named 'cafe_kansas_fonts'. Also, all files will need to retain their original names.
+The files are organized by file type. All html files should be within a folder named 'cafe_kansas_html', css files need to be in a folder named 'cafe_kansas_css', jpg/png files in a folder named 'cafe_kansas_pics', javascript files in a folder named 'cafe_kansas_js', and woff files in a folder named 'cafe_kansas_fonts'. Also, all files will need to retain their original names.
 
 The site contains four pages. The 'Place Order' page is where you can select items to 'order' within the drop-down menus. Once going through the checkout process, no information will be sent anywhere (it is a 'dummy' checkout so to say {this is mentioned below}).
 
