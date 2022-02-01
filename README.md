@@ -16,3 +16,6 @@ SUMMARY:
 This is a website for a cafe. This was treated as a starter project to learn and work through beginner coding struggles by designing and laying out a page with some html, css, and javascript. Since it's a starter project, and the idea was for a very small, family-owned cafe, the design and theme is a departure from the 'modern' formats that are seen across most restaurant/cafe sites these days. 
 
 The site also wasn't intended to become a fully functional site for a cafe that could realistically take orders from customers (at least this wasn't the intention for the time being), therefore, it has no back-end functionality to it. The info. entered on the 'Place Order' page is verified by javascript, and if the input is valid, it simply hides the checkout pop-up box then shows the thank you pop-up box. No data is sent anywhere.
+
+LICENSE:
+Distributed under the MIT License. See LICENSE.txt for more information.
