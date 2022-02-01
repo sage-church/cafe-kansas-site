@@ -19,4 +19,5 @@ This is a website for a cafe named 'Cafe Kansas'. This was treated as a starter 
 The site also wasn't intended to become a fully functional site for a cafe that could realistically take orders from customers (at least this wasn't the intention for the time being), therefore, it has no back-end functionality to it. The info. entered on the 'Place Order' page is verified by javascript, and if the input is valid, it simply hides the checkout pop-up box then shows the thank you pop-up box. No data is sent anywhere.
 
 LICENSE:
+
 Distributed under the MIT License. See the LICENSE file for more information.
