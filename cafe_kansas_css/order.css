@@ -332,3 +332,17 @@
     left: 0;
     background-color: rgba(223, 223, 223, 0.37);
 }
+
+@media (max-width: 460px) {
+    .total-box {
+        align-self: center;
+    }
+    
+    #checkout-button-box {
+        align-self: center;
+    }
+
+    #thank-you-pop-up {
+        left: 231px;
+    }
+}
