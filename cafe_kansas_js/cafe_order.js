@@ -2,7 +2,7 @@
 
 // Once the +/- button is clicked, the menu category toggles (is hidden or shown).
 // If the button is currently a '+' it changes to '-', and vice versa.
-$(".tile-show-or-hide").click(function () {
+$(".toggle-tile").click(function () {
     if (
         $(this).parent().next().css("display") == "none" ||
         $(this).parent().next().css("display") == ""
@@ -13,7 +13,7 @@ $(".tile-show-or-hide").click(function () {
     };
 });
 
-$(".tile-show-or-hide").click(function () {
+$(".toggle-tile").click(function () {
     $(this).parent().next().slideToggle("fast")
 });
 

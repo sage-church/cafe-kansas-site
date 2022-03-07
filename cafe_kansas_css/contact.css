@@ -6,20 +6,15 @@
     font-weight: normal;
     font-size: 28px;
     font-style: italic;
+    font-family: serif;
 }
 
-#address {
+address {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 50px 0 30px 0;
-    height: 180px;
-}
-
-.address-text {
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    min-width: 254px;
+    margin: 40px 0;
+    height: 190px;
+    font-size: 17px;
 }

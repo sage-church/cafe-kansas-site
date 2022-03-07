@@ -208,7 +208,7 @@ footer {
     min-width: 460px;
 }
 
-#footer-link-list {
+#footer-links {
     height: 50px;
     list-style-type: none;
     text-align: center;
@@ -217,7 +217,7 @@ footer {
     display: flex;
 }
 
-#footer-link-list a {
+#footer-links a {
     display: block;
     padding: 10px;
     text-align: center;
@@ -226,15 +226,15 @@ footer {
     background-color: rgba(240, 190, 124, 0.596);
 }
 
-#footer-link-list a:visited {
+#footer-links a:visited {
     color: black;
 }
 
-#footer-link-list a:hover {
+#footer-links a:hover {
     background-color: rgba(165, 138, 98, 0.808);
 }
 
-#footer-link-list a:active {
+#footer-links a:active {
     text-decoration: underline;
     color: rgb(95, 67, 49);
 }
