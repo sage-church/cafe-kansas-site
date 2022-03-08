@@ -207,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-summary">
+                <div id="order-summary">
                     <label id="order-total-label" for="total-dollar-amount">Order total :</label>
                     <input type="text" value="$0.00" id="total-dollar-amount" 
                         autocomplete="off" readonly
@@ -217,21 +217,21 @@
                     <button type="button" id="checkout-button">Checkout</button>
                 </div>
                 <aside id="checkout-pop-up">
-                    <div id="info-note">Please enter the following information:</div>
-                    <div id="input-fields">
-                        <div class="input-label-and-field">
+                    <div id="checkout-note">Please enter the following information:</div>
+                    <div id="checkout-input-fields">
+                        <div class="input-field">
                             <label for="first-name" id="first-name-label">First name:</label>
                             <input type="text" name="first-name" id="first-name" maxlength="30" 
                             autocomplete="off" required
                             >
                         </div>
-                        <div class="input-label-and-field">
+                        <div class="input-field">
                             <label for="last-name" id="last-name-label">Last name:</label>
                             <input type="text" name="last-name" id="last-name" maxlength="30"
                             autocomplete="off" required
                             >
                         </div>
-                        <div class="input-label-and-field">
+                        <div class="input-field">
                             <label for="phone" id="phone-label">Phone:</label>
                             <input type="tel" name="phone" id="phone" placeholder="###-###-####"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" 
@@ -240,11 +240,11 @@
                         </div>
                     </div>
                     <div id="total-submit-cancel">
-                        <div id="grand-total-box">
-                            <div>Your total:</div>
-                            <div id="pop-up-total"></div>
+                        <div id="checkout-total-box">
+                            <div>Your total: </div>
+                            <div id="checkout-total"></div>
                         </div>
-                        <div id="submit-cancel-div">
+                        <div id="submit-cancel">
                             <input type="button" id="submit" value="Submit">
                             <button type="button" id="cancel">Cancel</button>
                         </div>
@@ -252,7 +252,7 @@
                 </aside>
             </form>
             <aside id="thank-you-pop-up">
-                <div id="success-exit">
+                <div>
                     <div>Order Successful</div>
                     <div id="exit">x</div>
                 </div>
@@ -263,7 +263,7 @@
                         <div class="checkmark-kick"></div>
                     </span>
                 </div>
-                <div id="thanks-message">
+                <div id="thank-you-message">
                     Thank you for choosing Caf&#233; Kansas!
                 </div>
             </aside>
@@ -277,8 +277,8 @@
                 <li><a href="cafe_contact.html">Contact Us</a></li>
             </ul>
         </footer>
-        <script src="../cafe_kansas_js/jquery-3.6.0.js"></script>
-        <script src="../cafe_kansas_js/cafe_order.js"></script>
+        <script src="../cafe_kansas_js/jquery-3.6.0.js" defer></script>
+        <script src="../cafe_kansas_js/cafe_order.js" defer></script>
     </body>
     
 </html>

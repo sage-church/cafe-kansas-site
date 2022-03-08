@@ -97,7 +97,7 @@ form {
     margin: 0 50px 0 0;
 }
 
-.order-summary {
+#order-summary {
     display: flex;
     justify-content: flex-end;
     height: 40px;
@@ -165,11 +165,11 @@ form {
     background-color: rgba(221, 221, 221, 0.952);
 }
 
-#info-note {
+#checkout-note {
     padding: 10px 0 0 10px;
 }
 
-#input-fields {
+#checkout-input-fields {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,7 +177,7 @@ form {
     padding: 0 0 0 10px;
 }
 
-.input-label-and-field {
+.input-field {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -223,22 +223,13 @@ form {
     padding: 0 10px 10px 10px;
 }
 
-#grand-total-box {
+#checkout-total-box {
     display: flex;
 }
 
-#dollar-div {
-    text-align: center;
-    height: 18px;
-    min-width: 80px;
-    margin: 0 0 0 8px;
-    border: solid black 1px;
-    background-color: white;
-}
-
-#submit-cancel-div {
+#submit-cancel {
     margin-left: auto;
-    padding: 0 0 0 8px;
+    padding-left: 20px;
 }
 
 #submit {
@@ -306,8 +297,8 @@ form {
     width: 15px;
     height: 50px;
     background-color: white;
-    left: 53px;
-    top: 19px;
+    left: 50px;
+    top: 18px;
 }
 
 .checkmark-kick {
@@ -315,11 +306,11 @@ form {
     width: 34px;
     height: 15.1px;
     background-color: white;
-    left: 34px;
-    top: 54px;
+    left: 31px;
+    top: 55px;
 }
 
-#thanks-message {
+#thank-you-message {
     text-align: center;
     padding: 0 10px 0 10px;
 }
@@ -330,13 +321,14 @@ form {
     z-index: 1;
     height: 100%;
     width: 100%;
+    min-width: 460px;
     top: 0;
     left: 0;
     background-color: rgba(223, 223, 223, 0.37);
 }
 
 @media (max-width: 460px) {
-    .total-box {
+    #order-summary {
         align-self: center;
     }
     

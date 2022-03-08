@@ -81,7 +81,7 @@ $(".quantity-input").change(function () {
 // Variables for functionality of pop-up windows
 var checkoutButton = document.getElementById("checkout-button"),
     checkoutPopUp = document.getElementById("checkout-pop-up"),
-    popUptotal = document.getElementById("pop-up-total"),
+    popUptotal = document.getElementById("checkout-total"),
     cancel = document.getElementById("cancel"),
     greyOut = document.getElementById("grey-out"),
     bodyObject = document.body,
