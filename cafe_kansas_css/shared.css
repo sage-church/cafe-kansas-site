@@ -21,6 +21,8 @@ body {
     min-width: 460px;
 }
 
+/* Header title and navigation */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -86,6 +88,8 @@ header {
     box-shadow: 0 0 5px 2px tan;
 }
 
+/* Alternative menu navigation for smaller screen width */
+
 .menu-btn {
     display: none;
     height: 32px;
@@ -98,6 +102,49 @@ header {
     width: 100%;
     background-color: black;
 }
+
+/* Footer and footer navigation */
+
+footer {
+    margin: 0 0 25px 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    min-width: 460px;
+}
+
+#footer-links {
+    height: 50px;
+    list-style-type: none;
+    text-align: center;
+    margin: 2% 0 0 0;
+    padding: 0 20% 0 20%;
+    display: flex;
+}
+
+#footer-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    background-color: rgba(240, 190, 124, 0.596);
+}
+
+#footer-links a:visited {
+    color: black;
+}
+
+#footer-links a:hover {
+    background-color: rgba(165, 138, 98, 0.808);
+}
+
+#footer-links a:active {
+    text-decoration: underline;
+    color: rgb(95, 67, 49);
+}
+
+/* Aside menu for smaller screen widths */
 
 #side-drawer {
     display: none;
@@ -163,6 +210,8 @@ header {
     color: black;
 }
 
+/* General styles */
+
 h1 {
     font-family: "Tangerine", "serif";
     width: 172px;
@@ -200,44 +249,7 @@ hr {
     border-bottom: 2px solid black;
 }
 
-footer {
-    margin: 0 0 25px 0;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    min-width: 460px;
-}
-
-#footer-links {
-    height: 50px;
-    list-style-type: none;
-    text-align: center;
-    margin: 2% 0 0 0;
-    padding: 0 20% 0 20%;
-    display: flex;
-}
-
-#footer-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    text-decoration: underline;
-    color: black;
-    background-color: rgba(240, 190, 124, 0.596);
-}
-
-#footer-links a:visited {
-    color: black;
-}
-
-#footer-links a:hover {
-    background-color: rgba(165, 138, 98, 0.808);
-}
-
-#footer-links a:active {
-    text-decoration: underline;
-    color: rgb(95, 67, 49);
-}
+/* Change in header navigation for smaller screen width */
 
 @media (max-width: 790px) {
     header nav {
