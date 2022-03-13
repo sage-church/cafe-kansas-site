@@ -46,13 +46,14 @@ $(".quantity-input").change(function () {
 
 // Box where order total is displayed
 var orderTotalDisplayed = document.getElementById("total-dollar-amount");
+// Access all quantity fields to use values
+var quantElemList = document.querySelectorAll(".quantity-input")
 
 // Every time an entry in any item quantity field is made, the 'Order Total' at bottom of 
 // page is updated according to the item prices.
 $(".quantity-input").change(function () {
 
-        // Access all quantity fields to use values
-    var quantElemList = document.querySelectorAll(".quantity-input"),
+        
         // Access div for checkout button in order to display/hide
         checkoutButtonBox = document.getElementById("checkout-button-box"),
         orderTotal = 0;
@@ -176,10 +177,18 @@ cancel.onclick = function () {
 };
 
 // Exits thank you pop up that is displayed after checkout is complete. 
-// TODO: Reset order total after this occurs
 exit.onclick = function () {
     thankYouPopUp.style.display = "none"
     greyOut.style.display = "none";
+    checkoutButtonBox.style.display = "none";
     bodyObject.classList.remove("only-pop-up");
     orderTotalDisplayed.value = "$0.00"
+    firstNameInputBox.value = "";
+    lastNameInputBox.value = "";
+    phoneInputBox.value = "";
+
+    for (quantElem of quantElemList) {
+
+        quantElem.value = 0;
+    }
 }
