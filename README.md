@@ -15,9 +15,15 @@ The site wasn't intended to store data entered by users when placing an order, t
 
 ## SET UP
 
-A working version of the site can be found at 'cafekansas.epizy.com'.
+### Access site through web
 
-The site contains four pages. The 'Place Order' page is where you can select items to 'order' within the drop-down menus. Once going through the checkout process, no information will be sent anywhere or saved (it is a 'dummy' checkout).
+The site can be found at http://cafekansas.epizy.com.
+
+### Download and run site locally
+
+The files are organized by file type. All html files should be within a folder named 'cafe_kansas_html', css files need to be in a folder named 'cafe_kansas_css', jpg/png files in a folder named 'cafe_kansas_pics', javascript files in a folder named 'cafe_kansas_js', and woff files in a folder named 'cafe_kansas_fonts'. Also, all files will need to retain their original names.
+
+The site contains four pages. The 'Place Order' page is where you can select items to 'order' within the drop-down menus. Once going through the checkout process, no information will be sent or saved anywhere (it is a 'dummy' checkout).
 
 ## LICENSE
 
