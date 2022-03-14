@@ -15,9 +15,9 @@ The site wasn't intended to store data entered by users when placing an order, t
 
 ## SET UP
 
-The files are organized by file type. All html files should be within a folder named 'cafe_kansas_html', css files need to be in a folder named 'cafe_kansas_css', jpg/png files in a folder named 'cafe_kansas_pics', javascript files in a folder named 'cafe_kansas_js', and woff files in a folder named 'cafe_kansas_fonts'. Also, all files will need to retain their original names.
+A working version of the site can be found [here] (cafekansas.epizy.com).
 
-The site contains four pages. The 'Place Order' page is where you can select items to 'order' within the drop-down menus. Once going through the checkout process, no information will be sent anywhere (it is a 'dummy' checkout).
+The site contains four pages. The 'Place Order' page is where you can select items to 'order' within the drop-down menus. Once going through the checkout process, no information will be sent anywhere or saved (it is a 'dummy' checkout).
 
 ## LICENSE
 
