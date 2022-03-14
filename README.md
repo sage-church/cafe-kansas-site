@@ -15,7 +15,7 @@ The site wasn't intended to store data entered by users when placing an order, t
 
 ## SET UP
 
-A working version of the site can be found [here] (cafekansas.epizy.com).
+A working version of the site can be found at 'cafekansas.epizy.com'.
 
 The site contains four pages. The 'Place Order' page is where you can select items to 'order' within the drop-down menus. Once going through the checkout process, no information will be sent anywhere or saved (it is a 'dummy' checkout).
 
