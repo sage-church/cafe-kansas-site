@@ -193,6 +193,7 @@ footer {
 }
 
 #side-drawer li a {
+    /* color: black; */
     text-decoration: none;
     padding: 10px;
     min-width: 154px;
