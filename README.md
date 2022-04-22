@@ -15,10 +15,6 @@ The site wasn't intended to store data entered by users when placing an order, t
 
 ## SET UP
 
-### Access site through web
-
-The landing page can be found at http://cafekansas.epizy.com.
-
 ### Download and run site locally
 
 The files are organized by file type. All html files should be within a folder named 'cafe_kansas_html', css files need to be in a folder named 'cafe_kansas_css', jpg/png files in a folder named 'cafe_kansas_pics', javascript files in a folder named 'cafe_kansas_js', and woff files in a folder named 'cafe_kansas_fonts'. Also, all files will need to retain their original names.
