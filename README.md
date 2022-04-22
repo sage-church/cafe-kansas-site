@@ -25,6 +25,6 @@ The site contains four pages. The 'Place Order' page is where you can select ite
 
 Distributed under the MIT License. See the LICENSE file for more information.
 
-# PREVIEW
+## PREVIEW
 
 ![image](https://user-images.githubusercontent.com/38874409/164790246-15586657-1b68-4f72-9c48-9b14d823556f.png)
