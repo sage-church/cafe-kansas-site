@@ -1,5 +1,9 @@
 # Cafe Kansas
 
+## PREVIEW
+
+![image](https://user-images.githubusercontent.com/38874409/164790246-15586657-1b68-4f72-9c48-9b14d823556f.png)
+
 ## SUMMARY
 
 This is a website for a cafe named 'Cafe Kansas'. It was a starter project used to learn and get familiar with HTML, CSS, Javascript, and a little bit of jQuery. Since it's a starter project, and the idea was for a very small, family-owned cafe, the visual appearance isn't as modern looking as most restaurant/cafe sites on the web today. 
@@ -24,7 +28,3 @@ The site contains four pages. The 'Place Order' page is where you can select ite
 ## LICENSE
 
 Distributed under the MIT License. See the LICENSE file for more information.
-
-## PREVIEW
-
-![image](https://user-images.githubusercontent.com/38874409/164790246-15586657-1b68-4f72-9c48-9b14d823556f.png)
